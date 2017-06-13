@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>主页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--轮播-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/1.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/2.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/3.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="main-navigation">
+        <div class="container">
+            <div class="navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+         <span class="sr-only">Toggle Navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="current"><a href="#">主页</a></li>
+                        <li><a href="news.html">新闻</a></li>
+                        <li><a href="##">学习</a></li>
+                        <li><a href="##">个人</a></li>
+                        <li><a href="##">留言板</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- 个人资料 -->
+            <div class="col-md-6">
+                <div class="my-head">
+                    <img src="img/head-img.jpg" alt="..." class="img-circle">
+                </div>
+                <div class="my-body clearfix">
+                    <div class="my-head">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="ms-logo fa fa-envelope"></i>
+                                <span class="count label-warning">10</span>
+                            </a>
+                            <ul class="dropdown-menu messages">
+                                <li class="message">
+                                    <img alt="image" class="img-thumbnail" src="static/img/tx1.jpg">
+                                    <div class="media-body">
+                                        <strong>王大锤</strong> 苟利国家生死以 岂能祸福趋避之
+                                        <br>
+                                        <small class="text-muted">3天前 2017.6.10</small>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <img alt="image" class="img-thumbnail" src="static/img/tx2.jpg">
+                                    <div class="media-body ">
+                                        <strong>阿尔傻子</strong> 不要酱紫
+                                        <br>
+                                        <small class="text-muted">昨天</small>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="#">
+                                            <small><i class="fa fa-envelope"></small></i> 查看所有消息
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4><i class="fa fa-user"></i> <strong>昵称：奶油糖</strong></h4>
+                    <div class="line"></div>
+                    <br></br>
+                    <i class="fa fa-home" style="color: rebeccapurple"></i> 住址： 波江座ε 天苑四星系 致远星
+                    <br></br>
+                    <i class="fa fa-heart" style="color: red"></i> 爱好： 动漫 吃鱼 看书
+                    <br></br>
+                    <i class="fa fa-file" style="color: mediumseagreen"></i> 介绍：2010年为12集的日本动漫《学园默示录》演唱12首不同的片尾曲，并发行了自己的首张专辑《H.O.T.D.》。2010年10月，为新番的《魔法禁书目录第二季》献唱片尾曲。2013年4月10日推出第二张专辑VERTICAL
+                    HORIZON，初回限定版收录2周年演唱会的BD影片。2013年4月20日举办个人首次东京、名古屋、大阪巡回演唱。
+                    <br></br>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#msModal"><i class="fa fa-envelope"></i> 发消息给我</button>
+                    <!-- 模态框 -->
+                    <div class="modal fade" id="msModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content  fadeInRight">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				</button>
+                                    <h4 class="modal-title">
+                                        私信
+                                    </h4>
+                                </div>
+                                <textarea class="form-control" rows="3"></textarea>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+                                    <button type="button" class="btn btn-success">
+					发送
+				</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- todo面板 -->
+            <div class="col-md-6 todo">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a href="#undo" data-toggle="tab">待办事项</a></li>
+                    <li><a href="#doing" data-toggle="tab">进行中</a></li>
+                    <li><a href="#done" data-toggle="tab">已完成</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="undo">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">阅读</h3>
+                            </div>
+                            <div class="panel-body">
+                                吃完午饭后把昨天没看完的书补完.
+                            </div>
+                        </div>
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">英语讲座</h3>
+                            </div>
+                            <div class="panel-body">
+                                明天3:00pm在XX大楼503有李阳老师的英语学习讲座，一点要参加！
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">资料</h3>
+                            </div>
+                            <div class="panel-body">
+                                有空闲时间的话把资料整理下。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="doing">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">佛山</h3>
+                            </div>
+                            <div class="panel-body">
+                                go to foshan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="done">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">起床</h3>
+                            </div>
+                            <div class="panel-body">
+                                早睡早起身体好。
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">音乐</h3>
+                            </div>
+                            <div class="panel-body">
+                                把要听的歌曲下载到IPOD里。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="todo-footer">
+                    <input type="text" class="form-control" placeholder="标题" id="todo-title">
+                    <textarea class="form-control" rows="3" id="todo-content"></textarea>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="add-todo">添加</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="timeline-head">
+            <h1>点滴记忆</h1>
+        </div>
+        <div class="row">
+            <!-- 时间轴 -->
+            <div class="col-md-12">
+                <div class="timeline">
+                    <div class="timeline-block clearfix">
+                        <div class="timeline-icon">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h2>购物</h2>
+                            <p>买一些生活必需品。
+                            </p>
+                            <a href="#" class="btn btn-sm btn-warning"> 更多信息</a>
+                            <span class="timeline-date">
+                                        今天 <br>
+                                        <small>6月13日</small>
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="timeline-block clearfix">
+                        <div class="timeline-icon">
+                            <i class="fa fa-film"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h2>电影</h2>
+                            <p>和朋友一起观看了速度与激情8。
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary"> 更多信息</a>
+                            <span class="timeline-date">
+                                        三天前 <br>
+                                        <small>6月10日</small>
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="timeline-block clearfix">
+                        <div class="timeline-icon">
+                            <i class="fa fa-plane"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h2>节日</h2>
+                            <p>端午节
+                            </p>
+                            <a href="#" class="btn btn-sm btn-danger"> 更多信息</a>
+                            <span class="timeline-date">
+                                        近期 <br>
+                                        <small>5月30日</small>
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="timeline-block clearfix">
+                        <div class="timeline-icon">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h2>运动</h2>
+                            <p>参加一场足球比赛锻炼身体。
+                            </p>
+                            <a href="#" class="btn btn-sm btn-success"> 更多信息</a>
+                            <span class="timeline-date">
+                                        一个月以前 <br>
+                                        <small>5月11日</small>
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="timeline-block clearfix">
+                        <div class="timeline-icon">
+                            <i class="fa fa-music"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h2>音乐</h2>
+                            <p>参加周杰伦演唱会。
+                            </p>
+                            <a href="#" class="btn btn-sm btn-info"> 更多信息</a>
+                            <span class="timeline-date">
+                                        一个月以前 <br>
+                                        <small>5月2日</small>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright © 奶油糖</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
