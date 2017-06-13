@@ -26,4 +26,8 @@ $(document).ready(function (){
     })
 
     $("#add-todo").css("height",$("#todo-content").css("height"))
+    
+   $(".come_soon").click(function () {
+       alert("该板块尚未开放！");
+   }
 }) 
