@@ -46,5 +46,8 @@ require(['jquery','bootstrap'],function($){
 			alert("本板块尚未开放");
 		})
 		
+		$(".no_more").click(function () {
+			alert("暂无更多");
+		})
 	}) 
 })
