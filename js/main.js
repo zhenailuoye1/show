@@ -46,8 +46,16 @@ require(['jquery','bootstrap'],function($){
 			alert("本板块尚未开放");
 		})
 		
-		$(".no_more").click(function () {
-			alert("暂无更多");
+		$("#send").click(function () {
+			var letter = $("#letter");
+			if (!letter.val()) {
+				alert("内容不能为空！");
+				return false;
+			} else {
+				letter.val("");
+				alert("发送成功！");			
+			}
 		})
+		
 	}) 
 })
