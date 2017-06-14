@@ -50,6 +50,7 @@ require(['jquery','bootstrap'],function($){
 			alert("暂无更多信息");
 		})
 		
+		/*
 		$("#send").click(function () {
 			var letter = $("#letter");
 			if (!letter.val()) {
@@ -60,6 +61,7 @@ require(['jquery','bootstrap'],function($){
 				alert("发送成功！");			
 			}
 		})
+		*/
 		
 	}) 
 })
